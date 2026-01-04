@@ -1,0 +1,53 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.filter__label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--muted);
+}
+
+.filter__clear {
+  border: none;
+  background: none;
+  color: var(--accent-strong);
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.filter__clear:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.filter__select {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--stroke);
+  background: var(--panel-strong);
+  font-size: 0.95rem;
+  color: var(--ink);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+}
+
+.filter__select:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.filter__select:focus {
+  outline: 2px solid rgba(255, 122, 89, 0.4);
+  outline-offset: 2px;
+}

@@ -1,0 +1,20 @@
+.map {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+
+:global(.leaflet-container) {
+  height: 100%;
+  width: 100%;
+  font-family: var(--font-body);
+}
+
+:global(.leaflet-popup-content-wrapper) {
+  border-radius: 12px;
+}
+
+:global(.leaflet-popup-content) {
+  margin: 12px 14px;
+  font-size: 0.9rem;
+}
